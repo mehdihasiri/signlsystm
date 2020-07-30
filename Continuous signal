@@ -1,0 +1,9 @@
+t=linspace(0,10,500);
+x1=cos(pi/4*t);
+x2=cos(2*pi/4*t);
+x3=cos(6*pi/4*t);
+x4=cos(7*pi/4*t);
+plot(t,x1)
+plot(t,x2)
+plot(t,x3)
+plot(t,x4)

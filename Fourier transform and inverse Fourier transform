@@ -1,0 +1,11 @@
+clear all
+clc
+syms x w
+f1 = exp(-x^2);
+f2=sinc(x);
+%fourier transform
+F1=fourier(f1, x, w)
+F2=fourier(f2, x, w)
+%inverse fourier transform
+f1_inverse=ifourier(F1,w,x)
+f2_inverse=ifourier(F2,w,x)

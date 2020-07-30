@@ -1,0 +1,7 @@
+clear all
+clc
+close all
+a = [0.2 0];
+b = [0.1 0.3 1];
+w = logspace(-1,1);
+freqz(a,b,w)

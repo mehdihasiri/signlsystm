@@ -1,0 +1,9 @@
+t=linspace(0,10,30);
+y1=cos(pi/4*t);
+y2=cos(2*pi/4*t);
+y3=cos(6*pi/4*t);
+y4=cos(7*pi/4*t);
+stem(t,y1)
+stem(t,y2)
+stem(t,y3)
+stem(t,y4)

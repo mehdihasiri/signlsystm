@@ -1,0 +1,19 @@
+clear , close all;
+clc
+Fs=100;
+t=-5:1/Fs:5;
+y=square(t,50);%T1=2.5
+y(y>0)=1;
+y(y<0)=0;
+figure, plot(t,y);
+axis ([-6 6 -20 10])
+% Fourier Series 
+a0=0;
+Fy=zeros(size(t));
+N=10;
+ for n=1:2:N
+      Fy=Fy+sinc(n)*cos(n*pi*t/2.5);
+ end
+ hold on,
+ plot(t,Fy,'r')
+ legend(' Square ','Fourier Approx');
